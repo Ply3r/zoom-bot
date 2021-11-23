@@ -79,7 +79,7 @@ def openZoom(zoomCode):
 
 def start():
     info = getInformations()
-    while len(info) and not keyboard.is_pressed('q'):
+    while len(info):
         meeting = info[0]
         meetingTime = meeting['hour']
         meetingCode = meeting['code']
