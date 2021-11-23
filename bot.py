@@ -90,7 +90,9 @@ def start():
         if int(meetingHour) == int(realTime.tm_hour) and int(realTime.tm_min) >= int(meetingMinutes):
             openZoom(meetingCode)
             del info[0]
-        time.sleep(300)
+
+        if len(info):
+            time.sleep(300)
 
     print('Esgotaram os horarios :)')
 
