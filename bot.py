@@ -20,7 +20,7 @@ def getInformations():
         hold = getZoomCode()
         info.append(hold)
         result = input('Deseja adicionar mais? [S/N]: ')
-        if result == 'S' or result != 's':
+        if result != 'S' or result != 's':
             isEditing = False
     return info
 
